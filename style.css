@@ -1,0 +1,448 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins" sans-serif;
+  color: #222;
+  /* background-color: #93bc3f; */
+}
+
+video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* navbar shit */
+
+#navbackground {
+  background-color: #c8dda4;
+}
+
+.navbar {
+  padding: 0rem;
+  background-color: #c8dda4;
+}
+
+.navbar-nav li {
+  padding-right: 20px;
+}
+
+.nav-link {
+  font-size: 1.1em !important;
+}
+
+/* dropdown 1*/
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+  color: #222;
+  display: block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+  
+li a {
+  color: #222;
+}
+
+li:hover,
+li:focus-within {
+  cursor: pointer;
+}
+
+li:focus-within a {
+  outline: none;
+}
+
+ul li ul {
+  background: orange;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+   visibility: visible;
+   opacity: 1;
+   display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+/* dropdown 2 */
+/* nav ul ul {
+  display: none;
+}
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul {
+  border-radius: 10px;
+  list-style: none;
+  position: relative;
+  display: inline-table;
+}
+nav ul:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li:hover a {
+  color: #222;
+  text-decoration: none;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+}
+
+nav ul ul {
+  border-radius: 0px;
+  padding: 0;
+}
+nav ul ul li {
+  float: none;
+
+  position: relative;
+}
+nav ul ul li a {
+  padding: 15px 40px;
+  color: #222;
+}
+
+nav ul ul ul {
+  position: absolute;
+  left: 100%;
+  top: 0;
+} */
+
+/* dropdown 3 */
+
+
+
+@media (min-width: 450px) {
+  #site_header {
+    display: none;
+    width: 100% !important;
+  }
+}
+
+#navbackground img {
+  height: 50px;
+  margin-left: 5px;
+}
+
+#fact {
+  font-weight:600 ; 
+  font-size: 2.2em;
+  }
+
+/* for the slider text */
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-caption h1 {
+  font-size: 400%;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.carousel-caption h3 {
+  font-size: 200%;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+/* button tweaking for primary buttons */
+.btn-primary {
+  background-color: green;
+  border-color: green;
+}
+
+.btn-primary:hover {
+  background-color: rgb(2, 172, 2);
+  border-color: rgb(2, 172, 2);
+}
+
+/* that gray area part */
+.jumbotron {
+  padding: 1rem;
+  border-radius: 0;
+}
+
+/* padding class */
+.padding {
+  padding-bottom: 2rem;
+}
+
+.welcome {
+  width: 75%;
+  margin: 0 auto;
+  /* the two codes above makes the text width 75%, and centered */
+  padding-top: 2rem;
+}
+
+.welcome hr {
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+/* you can do it section */
+.fa-recycle {
+  color: orange;
+}
+.fa-mobile {
+  color: purple;
+}
+.fa-map-marker-alt {
+  color: blue;
+}
+.fa-recycle,
+.fa-mobile,
+.fa-map-marker-alt {
+  font-size: 4em;
+  margin: 1rem;
+}
+
+/* fun click shit */
+.fun {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+/* probs wont need this */
+.gif {
+  max-width: 100%;
+}
+
+/* social media connect section */
+.social a {
+  font-size: 4.5em;
+  padding: 3rem;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+.fa-twitter {
+  color: #00aced;
+}
+.fa-instagram {
+  color: #517fa8;
+}
+.fa-github {
+  color: #00aced;
+}
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-instagram:hover,
+.fa-github:hover {
+  color: #d5d5d5;
+}
+
+/* footer */
+footer {
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 2rem;
+}
+
+hr.light {
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+footer a {
+  color: #d5d5d5;
+}
+
+hr.light-100 {
+  border-top: 1px solid #d5d5d5;
+  width: 100%;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+footer img {
+  height: 50px;
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+  .social a {
+    font-size: 4em;
+    padding: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .carousel-caption {
+    top: 45%;
+  }
+
+  .carousel-caption h1 {
+    font-size: 350%;
+  }
+
+  .carousel-caption h3 {
+    font-size: 140%;
+    font-weight: 400;
+    padding-bottom: 0.2rem;
+  }
+
+  .carousel-caption .btn {
+    font-size: 95%;
+    padding: 8px 14px;
+  }
+
+  .display-4 {
+    font-size: 200%;
+  }
+
+  .social a {
+    font-size: 2.5em;
+    padding: 1.2rem;
+  }
+
+  #fact {
+    font-weight:600 ; 
+    font-size: 1.6em;
+    }
+
+}
+@media (max-width: 576px) {
+  .carousel-caption {
+    top: 40%;
+  }
+
+  .carousel-caption h1 {
+    font-size: 250%;
+  }
+
+  .carousel-caption h3 {
+    font-size: 110%;
+    font-weight: 400;
+    padding-bottom: 0.2rem;
+  }
+
+  .carousel-caption .btn {
+    font-size: 90%;
+    padding: 4px 8px;
+  }
+
+  .display-4 {
+    font-size: 160%;
+  }
+
+  .social a {
+    font-size: 2em;
+    padding: 0.7rem;
+  }
+
+  #fact {
+  font-weight:600 ; 
+  font-size: 1.5em;
+  }
+
+  /* nav ul {
+    padding: 0 20%;
+  } */
+}
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0 !important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url("img/mac.png");
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+  padding: 1rem;
+}
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
