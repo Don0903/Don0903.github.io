@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="style.css" rel="stylesheet" />
+    <title>Current progress</title>
+  </head>
+  <body>
+    <!-- Navigation float -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container-fluid" id="navbackground">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="http://example.com"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Why?
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="recycle.html">Second hand phones</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="current_progress.html"
+                    >Current Progress</a
+                  >
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#"
+                    >Recycle</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li id="submenu">
+                      <a class="dropdown-item" href="environment.html"
+                        >Environmental impacts</a
+                      >
+                    </li>
+                    <li id="submenu">
+                      <a class="dropdown-item" href="drcongo.html">DR Congo</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">
+                About Us<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="contact.html"
+                >Contact <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="dropoff.html"
+                >Dropoff Point <span class="sr-only">(current)</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!-- heading  -->
+    <div class="container-fluid padding">
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <h1 class="display-4">Ongoing projects</h1>
+          <br>
+          <p>In 2016, only 20% of all e-waste was recycled, be part of the change: support ongoing projects! 
+            Different initiatives exist to encourage people to recycle their phones, here are two examples
+          </p>
+        </div>
+        <hr />
+      </div>
+    </div>
+    <!-- Current progress section -->
+    <div class="container-fluid padding">
+      <div class="row padding">
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-imd-top" src="img/gorilla.jpg"/>
+            <div class="card-body">
+              <h2 class="card-title" style="text-align: center;" >They're calling on you</h2>
+              <p><b>Achievement:</b> They have recycled and re-purposed more than 180 000 devices.
+                <br><br><b>Problem:</b> Coltan is a metal used in mobile phones whose mining represents one of the biggest threats to Eastern Lowland Gorillas, since it implies destroying their habitat. Without a place to live, those gorillas are expected to become extinct. 
+                <br><br><b>Solution:</b>The zoos Victoria Community reclaims over 95% of the materials of mobile phones that are recycled in order to preserve as much as possible the gorillas habitat since mining of raw materials can be avoided, and at the same time by preserving the ecosystems since mobile phones are kept out of landfill. 
+                <br><br><b>Further details:</b> An estimate of how phone collections can help wild gorillas is provided on their website.</p>
+              <a href=" https://www.zoo.org.au/theyre-calling-on-you-phones/" class="btn btn-outline-secondary" target="_blank">Find out more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-imd-top" src="img/environmental.jpg" alt="" />
+            <div class="card-body">
+              <h2 class="card-title" style="text-align: center;">Close the loop</h2>
+              <p><b>Achievement:</b> They won the Circular Award in 2018 and many others. 
+               <br> <br><b>Problem:</b> In 2016, 44.7 million metric tons of e-waste were generated
+                according to a report of the International Solid Waste Association. A phone's 
+                birth is the most contaminating part of its life cycle: around 80% of each 
+                device's carbon footprint is generated at the manufacturing stage. In addition, 
+                the extraction and processing of virgin materials such as precious metals  
+                include a large land use as well as water and air pollution.
+                <br><br><b>Solution:</b> The transition to a circular economy can bring numerous benefits, 
+                since it focuses on extending the life cycle of products, helping to minimize 
+                waste. Therefore, pressure on the environment would be reduced and the 
+                availability of raw materials would be optimized. Close the loop represents the 
+                circular economy in action, by offering companies the possibility to offset the 
+                impact of their phones. For every phone that companies buy for their 
+                employees, Closing the Loop recovers a scrap phone from Africa or Asia so 
+                that the newly bought phones become material neutral and they are not 
+                contributing to e-waste. 
+                <br><br><b>further details:</b> a precise description of how they make a difference is 
+                provided on their website.  
+                </p>
+              <a href=" https://www.closetheloop.com.au/" class="btn btn-outline-secondary">Find out more</a>
+            </div>
+          </div>
+        </div>
+
+    <!--- Footer -->
+    <footer>
+      <div class="container-fluid padding">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <img src="img/logo.png" alt="" />
+            <hr class="light" />
+            <p>+31644571618</p>
+            <p>hoken0903@gmail.com</p>
+            <p>Willem Vliegenstraat 92</p>
+            <p>Maastricht, 6214AV</p>
+          </div>
+          <div class="col-md-4">
+            <hr class="light" />
+            <h5>something here</h5>
+            <hr class="light" />
+            <p>something here</p>
+            <p>something here</p>
+            <p>something here</p>
+          </div>
+          <div class="col-md-4">
+            <hr class="light" />
+            <h5>something here</h5>
+            <hr class="light" />
+            <p>something here</p>
+            <p>something here</p>
+            <p>something here</p>
+          </div>
+          <div class="col-12">
+            <hr class="light-100" />
+            <h5>&copy; somewebsite</h5>
+          </div>
+        </div>
+      </div>
+      <script>
+        jQuery(document).ready(function ($) {
+          jQuery(window).scroll(function () {
+            if ($(window).width() > 450) {
+              if ($(window).scrollTop() >= 400) {
+                $("#site_header").fadeIn();
+              } else {
+                $("#site_header").fadeOut();
+              }
+            }
+          });
+        });
+      </script>
+      <script>
+        $(".dropdown-menu a.dropdown-toggle").on("click", function (e) {
+          if (!$(this).next().hasClass("show")) {
+            $(this)
+              .parents(".dropdown-menu")
+              .first()
+              .find(".show")
+              .removeClass("show");
+          }
+          var $subMenu = $(this).next(".dropdown-menu");
+          $subMenu.toggleClass("show");
+
+          $(this)
+            .parents("li.nav-item.dropdown.show")
+            .on("hidden.bs.dropdown", function (e) {
+              $(".dropdown-submenu .show").removeClass("show");
+            });
+
+          return false;
+        });
+      </script>
+    </footer>
+  </body>
+</html>

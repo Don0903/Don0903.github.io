@@ -1,0 +1,821 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(83, 83, 83);
+  /* font-family: "Poppins"; */
+  /* background-color: #93bc3f; */
+}
+
+video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+b{
+  color: black;
+}
+
+/* navbar shit */
+
+#navbackground {
+  background-color: #c8dda4;
+  padding: 1em;
+}
+
+.navbar {
+  padding: 0rem;
+  background-color: #c8dda4;
+}
+
+.navbar-nav li {
+  padding-right: 20px;
+}
+
+.nav-link {
+  font-size: 1.1em !important;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu a::after {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 6px;
+  top: .8em;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: .1rem;
+  margin-right: .1rem;
+}
+
+#navbarNavDropdown ul li ul{
+  background-color: #b4ce88;
+}
+
+#navbarNavDropdown ul li ul li ul{
+  background-color: #81a04b
+}
+
+#navbarNavDropdown .dropdown-menu a{
+  background-color: #b4ce88;
+}
+
+#navbarNavDropdown .dropdown-menu .show a{
+  background-color: #81a04b;
+}
+
+#navbarNavDropdown .dropdown-menu .show a:hover{
+  background-color: #65852e;
+}
+
+#navbarNavDropdown .dropdown-menu a:hover{
+  background-color: #81a04b;
+}
+
+#navbarNavDropdown .dropdown-menu ul li:hover{
+  background-color: #65852e;
+}
+
+#submenu{
+  background-color: #81a04b;
+}
+
+
+/* dropdown 1*/
+/* ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+  color: #222;
+  display: block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+  
+li a {
+  color: #222;
+}
+
+li:hover,
+li:focus-within {
+  cursor: pointer;
+}
+
+li:focus-within a {
+  outline: none;
+}
+
+ul li ul {
+  background: orange;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+   visibility: visible;
+   opacity: 1;
+   display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+} */
+
+/* dropdown 2 */
+/* nav ul ul {
+  display: none;
+}
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul {
+  border-radius: 10px;
+  list-style: none;
+  position: relative;
+  display: inline-table;
+}
+nav ul:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li:hover a {
+  color: #222;
+  text-decoration: none;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+}
+
+nav ul ul {
+  border-radius: 0px;
+  padding: 0;
+}
+nav ul ul li {
+  float: none;
+
+  position: relative;
+}
+nav ul ul li a {
+  padding: 15px 40px;
+  color: #222;
+}
+
+nav ul ul ul {
+  position: absolute;
+  left: 100%;
+  top: 0;
+} */
+
+/* dropdown 3 */
+
+@media (min-width: 450px) {
+  #site_header {
+    display: none;
+    width: 100% !important;
+  }
+}
+
+
+#navbackground img {
+  height: 50px;
+  margin-left: 5px;
+}
+
+#fact {
+  font-weight: 600;
+  font-size: 2.2em;
+}
+
+#infotext{
+  text-align: justify;
+}
+
+
+/* for the slider text */
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-60%);
+}
+
+.carousel-caption h1 {
+  font-size: 400%;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.carousel-caption h3 {
+  font-size: 200%;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+.carousel-inner{
+  height: auto;
+}
+
+
+#workPls button{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#indeximg{
+  width: 100%;
+}
+
+
+/* learn more button */
+.btn-one {
+  color: #222;
+  transition: all 0.3s;
+  position: relative;
+}
+.btn-one span {
+  transition: all 0.3s;
+}
+.btn-one a {
+  color: #222;
+  text-decoration: none;
+}
+.btn-one::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: #222;
+  border-bottom-color: #222;
+  transform: scale(0.1, 1);
+}
+.btn-one:hover span {
+  letter-spacing: 2px;
+}
+.btn-one:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+.btn-one::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.btn-one:hover::after {
+  opacity: 0;
+  transform: scale(0.1, 1);
+}
+
+/* button tweaking for primary buttons */
+.btn-primary {
+  background-color: green;
+  border-color: green;
+}
+
+.btn-primary:hover {
+  background-color: rgb(2, 172, 2);
+  border-color: rgb(2, 172, 2);
+}
+
+/* that gray area part */
+.jumbotron {
+  padding: 1rem;
+  border-radius: 0;
+}
+
+/* padding class */
+.padding {
+  padding-bottom: 2rem;
+}
+
+.welcome {
+  width: 75%;
+  margin: 0 auto;
+  /* the two codes above makes the text width 75%, and centered */
+  padding-top: 2rem;
+}
+
+.welcome hr {
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+/* you can do it section */
+.fa-recycle {
+  color: orange;
+}
+.fa-mobile {
+  color: purple;
+}
+.fa-map-marker-alt {
+  color: blue;
+}
+.fa-recycle,
+.fa-mobile,
+.fa-map-marker-alt {
+  font-size: 4em;
+  margin: 1rem;
+}
+
+/* fun click shit */
+.fun {
+  width: 100%;
+  margin-bottom: 2rem;
+  background-color: #c8dda4;
+  border-color: #c8dda4;
+  color: #222;
+}
+
+/* probs wont need this */
+.gif {
+  max-width: 100%;
+}
+
+/* social media connect section */
+.social a {
+  font-size: 4.5em;
+  padding: 3rem;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+.fa-twitter {
+  color: #00aced;
+}
+.fa-instagram {
+  color: #517fa8;
+}
+.fa-github {
+  color: #00aced;
+}
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-instagram:hover,
+.fa-github:hover {
+  color: #d5d5d5;
+}
+
+/* footer */
+footer {
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 2rem;
+}
+
+hr.light {
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+footer a {
+  color: #d5d5d5;
+}
+
+hr.light-100 {
+  border-top: 1px solid #d5d5d5;
+  width: 100%;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+footer img {
+  height: 50px;
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+  .social a {
+    font-size: 4em;
+    padding: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .carousel-caption {
+    top: 45%;
+  }
+
+  .carousel-caption h1 {
+    font-size: 350%;
+  }
+
+  .carousel-caption h3 {
+    font-size: 140%;
+    font-weight: 400;
+    padding-bottom: 0.2rem;
+  }
+
+  .carousel-caption .btn {
+    font-size: 95%;
+    padding: 8px 14px;
+  }
+
+  .display-4 {
+    font-size: 200%;
+  }
+
+  .social a {
+    font-size: 2.5em;
+    padding: 1.2rem;
+  }
+
+  #fact {
+    font-weight: 600;
+    font-size: 1.6em;
+  }
+}
+@media (max-width: 576px) {
+  .carousel-caption {
+    top: 40%;
+  }
+
+  .carousel-caption h1 {
+    font-size: 250%;
+  }
+
+  .carousel-caption h3 {
+    font-size: 110%;
+    font-weight: 400;
+    padding-bottom: 0.2rem;
+  }
+
+  .carousel-caption .btn {
+    font-size: 90%;
+    padding: 4px 8px;
+  }
+
+  .display-4 {
+    font-size: 160%;
+  }
+
+  .social a {
+    font-size: 2em;
+    padding: 0.7rem;
+  }
+
+  #fact {
+    font-weight: 600;
+    font-size: 1.5em;
+  }
+
+  .right_contact{
+    display: none;
+  }
+
+  .left_contact{
+    width: 100%;
+    margin:0 ;
+  }
+
+
+}
+
+@media (min-width:993px) {
+  /* image for informaiton sections */
+#infoimg{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 35% 0;
+}
+
+
+
+}
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0 !important;
+}
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+  padding: 1rem;
+}
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+/*----------------------Contact page-----------------------*/
+
+/* override some options */
+.my_p {
+  font-style: italic;
+  text-align: center;
+}
+
+/* Contact box */
+/* we want the contact us box section to cover 80% */
+.container {
+  width: 80%;
+  margin-bottom: 5%;
+}
+
+.contactBox {
+  background: #fff;
+  display: flex;
+  border-radius: 10px;
+}
+
+.left_contact {
+  flex-basis: 60%;
+  padding: 40px 60px;
+}
+
+.right_contact {
+  flex-basis: 40%;
+  padding: 40px;
+  background: #10c5a1;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.row_input {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.row_input .group_input {
+  flex-basis: 45%;
+}
+
+input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  padding-bottom: 5px;
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 10px;
+  box-sizing: border-box; /*fits to the border of the rest of the box*/
+}
+
+.submit_button {
+  background-color: white;
+  color: black;
+  border: 2px solid blue;
+  margin-top: 20px;
+  box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3); /*copied from online, just trying out some shadows*/
+}
+
+label {
+  margin-bottom: 6px;
+  display: block;
+  color: blue;
+}
+
+/*space the title */
+
+.container p {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.left_contact h3 {
+  color: blue;
+  margin-bottom: 40px;
+  font-size: x-large;
+}
+
+.right_contact h3 {
+  margin-bottom: 40px;
+  font-size: x-large;
+}
+
+/*to space it out. first-child checks to see if the element is the first child of its parent*/
+tr td:first-child {
+  padding-right: 20px;
+}
+
+tr td {
+  padding-top: 20px;
+}
+
+
+/* some dumb shit */
+.animated-button1 {
+  background: linear-gradient(-30deg, white 50%, white   50%);
+  display: inline-block;
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+  overflow: hidden;
+  color: #222;
+  font-size: 20px;
+  letter-spacing: 2.5px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 100%;
+}
+
+.animated-button1::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(61, 124, 61);
+  opacity: 0;
+  -webkit-transition: .2s opacity ease-in-out;
+  transition: .2s opacity ease-in-out;
+}
+
+.animated-button1:hover::before {
+  opacity: 0.2;
+}
+
+.animated-button1 span {
+  position: absolute;
+}
+
+.animated-button1 span:nth-child(1) {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(43, 8, 8, 0)), to(green));
+  background: linear-gradient(to left, rgba(43, 8, 8, 0), green);
+  -webkit-animation: 2s animateTop linear infinite;
+          animation: 2s animateTop linear infinite;
+}
+
+@keyframes animateTop {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+.animated-button1 span:nth-child(2) {
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 2px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(43, 8, 8, 0)), to(green));
+  background: linear-gradient(to top, rgba(43, 8, 8, 0), green);
+  -webkit-animation: 2s animateRight linear -1s infinite;
+          animation: 2s animateRight linear -1s infinite;
+}
+
+@keyframes animateRight {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+.animated-button1 span:nth-child(3) {
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(43, 8, 8, 0)), to(green));
+  background: linear-gradient(to right, rgba(43, 8, 8, 0), green);
+  -webkit-animation: 2s animateBottom linear infinite;
+          animation: 2s animateBottom linear infinite;
+}
+
+@keyframes animateBottom {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+.animated-button1 span:nth-child(4) {
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 2px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(43, 8, 8, 0)), to(green));
+  background: linear-gradient(to bottom, rgba(43, 8, 8, 0), green);
+  -webkit-animation: 2s animateLeft linear -1s infinite;
+          animation: 2s animateLeft linear -1s infinite;
+}
+
+@keyframes animateLeft {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+/* #collapsebox{
+
+} */

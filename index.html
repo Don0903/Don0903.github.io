@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Recycle!</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navigation float -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container-fluid" id="navbackground">
+        <a class="navbar-brand" href="index.html"
+          ><img src="img/logo.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="http://example.com"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Why?
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="recycle.html"
+                    >Second hand phones</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="current_progress.html"
+                    >Current Progress</a
+                  >
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Recycle</a>
+                  <ul class="dropdown-menu">
+                    <li id="submenu">
+                      <a class="dropdown-item" href="environment.html"
+                        >Environmental impacts</a
+                      >
+                    </li>
+                    <li id="submenu">
+                      <a class="dropdown-item" href="drcongo.html">DR Congo</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </li>
+          <a class="nav-link" href="aboutphone.html" style="padding-right:1.5%;"
+          >About the phone<span class="sr-only">(current)</span></a
+        >
+      </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">
+                About Us<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="contact.html"
+                >Contact <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="dropoff.html"
+                >Dropoff Point <span class="sr-only">(current)</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--- Image Slider -->
+    <div class="carousel slide" id="slides" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#slides" data-slide-to="0" class="active"></li>
+        <li data-target="#slides" data-slide-to="1"></li>
+        <li data-target="#slides" data-slide-to="2"></li>
+      </ul>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <video src="video.mp4" autoplay="true" loop="true" muted></video>
+          <div class="carousel-caption">
+            <h1 class="display-2">Once is not enough!</h1>
+            <h3>Recycle your smartphone</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/recycling-your-mobile.jpg" alt="" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/donating-phones.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!--- Jumbotron -->
+    <div class="container-fluid">
+      <div class="row jumbotron">
+        <!-- below seems complicated but its not -->
+        <!-- boostrap column takes 12 rows. so in small scale windows upto sm,
+		it remains 12 columns, but once bigger it loses columns to fit -->
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+          <p class="lead text-center" id="fact">
+            Did you know that every year, 130 million cell phones are thrown
+            away and therefore wasted?
+          </p>
+        </div>
+        <div
+          class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2"
+          id="workPls"
+        >
+          <a href="dropoff.html"
+            ><button class="btn btn-outline-secondary btn-lg" type="button">
+              HELP NOW
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!--- Welcome Section -->
+    <div class="container-fluid padding">
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <h1 class="display-4">You can do it.</h1>
+        </div>
+        <hr />
+        <div class="col-12">
+          <p class="lead">
+            Used smartphones have potential to be economically profitable and
+            environmentally friendly.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--- Three Column Section -->
+    <div class="container-fluid padding">
+      <div class="row text-center padding">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <i class="fas fa-recycle"></i>
+          <h3>Benefits of recycling</h3>
+          <a href="#">
+            <div class="btn btn-one">
+              <span>READ MORE</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <i class="fas fa-mobile"></i>
+          <h3>Benefits of buying 2nd hand</h3>
+          <a href="#">
+            <div class="btn btn-one">
+              <span>READ MORE</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Drop-off points</h3>
+          <a href="dropoff.html">
+            <div class="btn btn-one">
+              <span>READ MORE</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <hr class="my-4" />
+    </div>
+
+    <!--- Two Column Section -->
+    <div class="container-fluid padding">
+      <div class="row padding">
+        <div class="col-lg-6">
+          <h2 class="text-center">Do it for the kids</h2>
+          <br />
+          <em>"...They worked in mines for up to 12 hours a day, for US$1 or $2, in extremely hot temperatures, without 
+            the slightest protection and in contact with high concentrations of cobalt.."</em>
+            <br>
+            <br>
+            <br>
+          <a
+            class="btn btn-primary text-center container-fluid"
+            href="drcongo.html"
+            >Learn More</a
+          >
+        </div>
+        <div class="col-lg-6">
+          <img
+            class="img-fluid"
+            src="img/child-labour.jpg"
+            alt=""
+            style="border-radius: 15px"
+            id="indeximg"
+          />
+        </div>
+      </div>
+    </div>
+    <hr class="my-4" />
+
+    <!--- two column section -->
+    <div class="container-fluid padding">
+      <div class="row padding">
+        <div class="col-lg-6">
+          <img
+            class="img-fluid"
+            src="img/recycle.jpg"
+            alt=""
+            style="border-radius: 15px"
+            id="indeximg"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h2 class="text-center">Do it for the Planet</h2>
+          <br />
+          <p>
+            5 billion people were estimated to have a phone in 2020, and the
+            number has been growing since. This represents an environmental
+            disaster, since mining to obtain the needed materials destroys
+            ecosystems and generates toxic by-products...
+          </p>
+          <br>
+          <a
+            class="btn btn-primary text-center container-fluid"
+            href="environment.html"
+            >Learn More</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-4" />
+    <!--- useful link section -->
+    <a data-toggle="collapse" data-target="#emoji" class="animated-button1">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Click here for useful links
+    </a>
+
+    <div id="emoji" class="collapse" style="padding: 5%">
+      <div class="container-fluid padding" id="collapsebox">
+        <div class="row text-center">
+          <div class="col-sm-6 col-md-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="8em"
+              height="8em"
+              fill="currentColor"
+              class="bi bi-shield-check"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"
+              />
+              <path
+                d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"
+              />
+            </svg>
+          </div>
+          <div
+            class="col-sm-6 col-md-3"
+            style="background-color: blanchedalmond; border-radius: 10px"
+          >
+            <div class="textboxlink">
+              <h1>Privacy matters</h1>
+              <p>
+                <a
+                  href="https://www.compareandrecycle.co.uk/blog/how-to-remove-data-from-iphone-android"
+                  target="_blank"
+                  >Click here</a
+                >
+                to find out how to delete your data from the phone you want to
+                recycle
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="8em"
+              height="8em"
+              fill="currentColor"
+              class="bi bi-patch-question"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8.05 9.6c.336 0 .504-.24.554-.627.04-.534.198-.815.847-1.26.673-.475 1.049-1.09 1.049-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.71 1.71 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745z"
+              />
+              <path
+                d="m10.273 2.513-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911l-1.318.016z"
+              />
+              <path d="M7.001 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0z" />
+            </svg>
+          </div>
+          <div
+            class="col-sm-6 col-md-3"
+            style="background-color: blanchedalmond; border-radius: 10px"
+          >
+            <div class="textboxlink">
+              <h1>Where to buy</h1>
+              <p>
+                Don't know who to turn to for buying second hand? check out
+                these companies:
+                <a href="https://www.backmarket.de">BackMarket</a>,
+                <a href="https://asgoodasnew.de/Unternehmen/">As good as new</a
+                >,
+                <a href="https://www.asmartworld.be/en/qui-sommes-nous"
+                  >A smart world</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--- Two Column Section -->
+
+    <!--- Connect -->
+    <div class="container-fluid padding">
+      <div class="row text-center padding">
+        <div class="col-12">
+          <h2>Contact Us!</h2>
+        </div>
+        <div class="col-12 social padding">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!--- Footer -->
+    <footer>
+      <div class="container-fluid padding">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <img src="img/logo.png" alt="" />
+            <hr class="light" />
+            <p>+31644571618</p>
+            <p>hoken0903@gmail.com</p>
+            <p>Willem Vliegenstraat 92</p>
+            <p>Maastricht, 6214AV</p>
+          </div>
+          <div class="col-md-4">
+            <hr class="light" />
+            <h5>something here</h5>
+            <hr class="light" />
+            <p>something here</p>
+            <p>something here</p>
+            <p>something here</p>
+          </div>
+          <div class="col-md-4">
+            <hr class="light" />
+            <h5>something here</h5>
+            <hr class="light" />
+            <p>something here</p>
+            <p>something here</p>
+            <p>something here</p>
+          </div>
+          <div class="col-12">
+            <hr class="light-100" />
+            <h5>&copy; somewebsite</h5>
+          </div>
+        </div>
+      </div>
+      <script>
+        jQuery(document).ready(function ($) {
+          jQuery(window).scroll(function () {
+            if ($(window).width() > 450) {
+              if ($(window).scrollTop() >= 400) {
+                $("#site_header").fadeIn();
+              } else {
+                $("#site_header").fadeOut();
+              }
+            }
+          });
+        });
+      </script>
+      <script>
+        $(".dropdown-menu a.dropdown-toggle").on("click", function (e) {
+          if (!$(this).next().hasClass("show")) {
+            $(this)
+              .parents(".dropdown-menu")
+              .first()
+              .find(".show")
+              .removeClass("show");
+          }
+          var $subMenu = $(this).next(".dropdown-menu");
+          $subMenu.toggleClass("show");
+
+          $(this)
+            .parents("li.nav-item.dropdown.show")
+            .on("hidden.bs.dropdown", function (e) {
+              $(".dropdown-submenu .show").removeClass("show");
+            });
+
+          return false;
+        });
+      </script>
+    </footer>
+  </body>
+</html>
