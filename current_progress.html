@@ -29,7 +29,9 @@
     <!-- Navigation float -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       <div class="container-fluid" id="navbackground">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="index.html"
+          ><img src="img/logo.jpg" alt="" style="border-radius: 5px"
+        /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -43,12 +45,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="index.html"
                 >Home <span class="sr-only">(current)</span></a
               >
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown active">
               <a
                 class="nav-link dropdown-toggle"
                 href="http://example.com"
@@ -63,17 +65,17 @@
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <li>
-                  <a class="dropdown-item" href="recycle.html">Second hand phones</a>
+                  <a class="dropdown-item" href="recycle.html"
+                    >Second hand phones</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="current_progress.html"
+                  <a class="dropdown-item active" href="current_progress.html"
                     >Current Progress</a
                   >
                 </li>
                 <li class="dropdown-submenu">
-                  <a class="dropdown-item dropdown-toggle" href="#"
-                    >Recycle</a
-                  >
+                  <a class="dropdown-item dropdown-toggle" href="#">Recycle</a>
                   <ul class="dropdown-menu">
                     <li id="submenu">
                       <a class="dropdown-item" href="environment.html"
@@ -88,16 +90,24 @@
               </ul>
             </li>
             <li class="nav-item">
+              <a
+                class="nav-link"
+                href="aboutphone.html"
+                style="padding-right: 1.5%; white-space: nowrap"
+                >About the phone<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="about.html">
                 About Us<span class="sr-only">(current)</span></a
               >
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="contact.html"
                 >Contact <span class="sr-only">(current)</span></a
               >
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="dropoff.html"
                 >Dropoff Point <span class="sr-only">(current)</span></a
               >
@@ -123,7 +133,7 @@
     <!-- Current progress section -->
     <div class="container-fluid padding">
       <div class="row padding">
-        <div class="col-md-4">
+        <div class="col-lg-6">
           <div class="card">
             <img class="card-imd-top" src="img/gorilla.jpg"/>
             <div class="card-body">
@@ -136,7 +146,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-6">
           <div class="card">
             <img class="card-imd-top" src="img/environmental.jpg" alt="" />
             <div class="card-body">
@@ -164,7 +174,8 @@
             </div>
           </div>
         </div>
-
+      </div>
+    </div>
     <!--- Footer -->
     <footer>
       <div class="container-fluid padding">
