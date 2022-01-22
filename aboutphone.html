@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Recycle!</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -16,284 +18,274 @@
       src="https://kit.fontawesome.com/a076d05399.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <link href="style.css" rel="stylesheet" />
-    <title>About The Phone</title>
-</head>
-<body>
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <div class="container-fluid" id="navbackground">
-          <a class="navbar-brand" href="index.html"
-            ><img src="img/logo.png" alt=""
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html"
-                  >Home <span class="sr-only">(current)</span></a
-                >
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="http://example.com"
-                  id="navbarDropdownMenuLink"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  >Why?
-                </a>
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <li>
-                    <a class="dropdown-item" href="recycle.html"
-                      >Second hand phones</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="current_progress.html"
-                      >Current Progress</a
-                    >
-                  </li>
-                  <li class="dropdown-submenu">
-                    <a class="dropdown-item dropdown-toggle" href="#">Recycle</a>
-                    <ul class="dropdown-menu">
-                      <li id="submenu">
-                        <a class="dropdown-item" href="environment.html"
-                          >Environmental impacts</a
-                        >
-                      </li>
-                      <li id="submenu">
-                        <a class="dropdown-item" href="drcongo.html">DR Congo</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-            </li>
-            <a class="nav-link" href="aboutphone.html" style="padding-right:1.5%;"
-            >About the phone<span class="sr-only">(current)</span></a
-          >
-        </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">
-                  About Us<span class="sr-only">(current)</span></a
-                >
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="contact.html"
-                  >Contact <span class="sr-only">(current)</span></a
-                >
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="dropoff.html"
-                  >Dropoff Point <span class="sr-only">(current)</span></a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+  </head>
 
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container-fluid" id="navbackground">
+        <a class="navbar-brand" href="index.html"
+          ><img src="img/logo.jpg" alt="" style="border-radius: 5px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="http://example.com"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Why?
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="recycle.html"
+                    >Second hand phones</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="current_progress.html"
+                    >Current Progress</a
+                  >
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Recycle</a>
+                  <ul class="dropdown-menu">
+                    <li id="submenu">
+                      <a class="dropdown-item" href="environment.html"
+                        >Environmental impacts</a
+                      >
+                    </li>
+                    <li id="submenu">
+                      <a class="dropdown-item" href="drcongo.html">DR Congo</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item active">
+              <a
+                class="nav-link"
+                href="aboutphone.html"
+                style="padding-right: 1.5%; white-space: nowrap"
+                >About the phone<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">
+                About Us<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"
+                >Contact <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dropoff.html"
+                >Dropoff Point <span class="sr-only">(current)</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <!--- Welcome Section -->
     <div class="container-fluid padding">
-        <div class="row welcome text-center">
-          <div class="col-12">
-            <h1 class="display-4">What happens to my phone?</h1>
-          </div>
-          <hr />
-          <div class="col-12">
-            <p class="lead">
-              Used smartphones have potential to be economically profitable and
-              environmentally friendly.
-            </p>
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <h1 class="display-4">What happens to my phone?</h1>
+        </div>
+        <hr />
+        <div class="col-12">
+          <p class="lead">
+            Used smartphones have potential to be economically profitable and
+            environmentally friendly.
+          </p>
+        </div>
+      </div>
+    </div>
 
-          </div>
+    <!--- Three Column Section -->
+    <div class="container-fluid padding">
+      <div class="row text-center padding">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <i class="fas fa-recycle"></i>
+          <h3>Benefits of recycling</h3>
+          <a href="#">
+            <div class="btn btn-one">
+              <span>READ MORE</span>
+            </div>
+          </a>
         </div>
-      </div>
-  
-      <!--- Three Column Section -->
-      <div class="container-fluid padding">
-        <div class="row text-center padding">
-          <div class="col-xs-12 col-sm-6 col-md-4">
-            <i class="fas fa-recycle"></i>
-            <h3>Benefits of recycling</h3>
-            <a href="#">
-              <div class="btn btn-one">
-                <span>READ MORE</span>
-              </div>
-            </a>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4">
-            <i class="fas fa-mobile"></i>
-            <h3>Benefits of buying 2nd hand</h3>
-            <a href="#">
-              <div class="btn btn-one">
-                <span>READ MORE</span>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md-4">
-            <i class="fas fa-map-marker-alt"></i>
-            <h3>Drop-off points</h3>
-            <a href="dropoff.html">
-              <div class="btn btn-one">
-                <span>READ MORE</span>
-              </div>
-            </a>
-          </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <i class="fas fa-mobile"></i>
+          <h3>Benefits of buying 2nd hand</h3>
+          <a href="#">
+            <div class="btn btn-one">
+              <span>READ MORE</span>
+            </div>
+          </a>
         </div>
-        <hr class="my-4" />
-      </div>
-  
-      <!--- Two Column Section -->
-      <div class="container-fluid padding">
-        <div class="row padding">
-          <div class="col-lg-6">
-            <h2 class="text-center">Do it for the kids</h2>
-            <br />
-            <em>"...They worked in mines for up to 12 hours a day, for US$1 or $2, in extremely hot temperatures, without 
-              the slightest protection and in contact with high concentrations of cobalt.."</em>
-              <br>
-              <br>
-              <br>
-            <a
-              class="btn btn-primary text-center container-fluid"
-              href="drcongo.html"
-              >Learn More</a
-            >
-          </div>
-          <div class="col-lg-6">
-            <img
-              class="img-fluid"
-              src="img/child-labour.jpg"
-              alt=""
-              style="border-radius: 15px"
-              id="indeximg"
-            />
-          </div>
+        <div class="col-sm-12 col-md-4">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Drop-off points</h3>
+          <a href="dropoff.html">
+            <div class="btn btn-one">
+              <span>READ MORE</span>
+            </div>
+          </a>
         </div>
       </div>
       <hr class="my-4" />
-  
-      <!--- two column section -->
+    </div>
+
+    <!--- Two Column Section -->
+    <div class="container-fluid padding">
+      <div class="row padding">
+        <div class="col-lg-6">
+          <h2 class="text-center">Do it for the kids</h2>
+          <br />
+          <em
+            >"...They worked in mines for up to 12 hours a day, for US$1 or $2,
+            in extremely hot temperatures, without the slightest protection and
+            in contact with high concentrations of cobalt.."</em
+          >
+          <br />
+          <br />
+          <br />
+          <a
+            class="btn btn-primary text-center container-fluid"
+            href="drcongo.html"
+            >Learn More</a
+          >
+        </div>
+        <div class="col-lg-6">
+          <img
+            class="img-fluid"
+            src="img/child-labour.jpg"
+            alt=""
+            style="border-radius: 15px"
+            id="indeximg"
+          />
+        </div>
+      </div>
+    </div>
+    <hr class="my-4" />
+
+    <div class="container-fluid padding">
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <h1 class="display-4">What is my phone made from?</h1>
+        </div>
+        <hr />
+        <div class="col-12">
+          <p class="lead">
+            Here are the list of phone parts, and its raw material components
+            with its weight. Click on phone parts to find out!
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--- SunBurst chart -->
+
+    <script type="text/javascript" src="test.js"></script>
+
+    <!--- Footer -->
+    <footer>
       <div class="container-fluid padding">
-        <div class="row padding">
-          <div class="col-lg-6">
-            <img
-              class="img-fluid"
-              src="img/recycle.jpg"
-              alt=""
-              style="border-radius: 15px"
-              id="indeximg"
-            />
+        <div class="row text-center">
+          <div class="col-md-4">
+            <img src="img/logo.png" alt="" />
+            <hr class="light" />
+            <p>+31644571618</p>
+            <p>hoken0903@gmail.com</p>
+            <p>Willem Vliegenstraat 92</p>
+            <p>Maastricht, 6214AV</p>
           </div>
-          <div class="col-lg-6">
-            <h2 class="text-center">Do it for the Planet</h2>
-            <br />
-            <p>
-              5 billion people were estimated to have a phone in 2020, and the
-              number has been growing since. This represents an environmental
-              disaster, since mining to obtain the needed materials destroys
-              ecosystems and generates toxic by-products...
-            </p>
-            <br>
-            <a
-              class="btn btn-primary text-center container-fluid"
-              href="environment.html"
-              >Learn More</a
-            >
+          <div class="col-md-4">
+            <hr class="light" />
+            <h5>something here</h5>
+            <hr class="light" />
+            <p>something here</p>
+            <p>something here</p>
+            <p>something here</p>
+          </div>
+          <div class="col-md-4">
+            <hr class="light" />
+            <h5>something here</h5>
+            <hr class="light" />
+            <p>something here</p>
+            <p>something here</p>
+            <p>something here</p>
+          </div>
+          <div class="col-12">
+            <hr class="light-100" />
+            <h5>&copy; somewebsite</h5>
           </div>
         </div>
       </div>
-
-
-
-          <!--- Footer -->
-    <footer>
-        <div class="container-fluid padding">
-          <div class="row text-center">
-            <div class="col-md-4">
-              <img src="img/logo.png" alt="" />
-              <hr class="light" />
-              <p>+31644571618</p>
-              <p>hoken0903@gmail.com</p>
-              <p>Willem Vliegenstraat 92</p>
-              <p>Maastricht, 6214AV</p>
-            </div>
-            <div class="col-md-4">
-              <hr class="light" />
-              <h5>something here</h5>
-              <hr class="light" />
-              <p>something here</p>
-              <p>something here</p>
-              <p>something here</p>
-            </div>
-            <div class="col-md-4">
-              <hr class="light" />
-              <h5>something here</h5>
-              <hr class="light" />
-              <p>something here</p>
-              <p>something here</p>
-              <p>something here</p>
-            </div>
-            <div class="col-12">
-              <hr class="light-100" />
-              <h5>&copy; somewebsite</h5>
-            </div>
-          </div>
-        </div>
-        <script>
-          jQuery(document).ready(function ($) {
-            jQuery(window).scroll(function () {
-              if ($(window).width() > 450) {
-                if ($(window).scrollTop() >= 400) {
-                  $("#site_header").fadeIn();
-                } else {
-                  $("#site_header").fadeOut();
-                }
+      <script>
+        jQuery(document).ready(function ($) {
+          jQuery(window).scroll(function () {
+            if ($(window).width() > 450) {
+              if ($(window).scrollTop() >= 400) {
+                $("#site_header").fadeIn();
+              } else {
+                $("#site_header").fadeOut();
               }
-            });
-          });
-        </script>
-        <script>
-          $(".dropdown-menu a.dropdown-toggle").on("click", function (e) {
-            if (!$(this).next().hasClass("show")) {
-              $(this)
-                .parents(".dropdown-menu")
-                .first()
-                .find(".show")
-                .removeClass("show");
             }
-            var $subMenu = $(this).next(".dropdown-menu");
-            $subMenu.toggleClass("show");
-  
-            $(this)
-              .parents("li.nav-item.dropdown.show")
-              .on("hidden.bs.dropdown", function (e) {
-                $(".dropdown-submenu .show").removeClass("show");
-              });
-  
-            return false;
           });
-        </script>
-      </footer>
-</body>
+        });
+      </script>
+      <script>
+        $(".dropdown-menu a.dropdown-toggle").on("click", function (e) {
+          if (!$(this).next().hasClass("show")) {
+            $(this)
+              .parents(".dropdown-menu")
+              .first()
+              .find(".show")
+              .removeClass("show");
+          }
+          var $subMenu = $(this).next(".dropdown-menu");
+          $subMenu.toggleClass("show");
+
+          $(this)
+            .parents("li.nav-item.dropdown.show")
+            .on("hidden.bs.dropdown", function (e) {
+              $(".dropdown-submenu .show").removeClass("show");
+            });
+
+          return false;
+        });
+      </script>
+    </footer>
+  </body>
 </html>
