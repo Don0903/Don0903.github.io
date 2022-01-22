@@ -33,6 +33,13 @@ b {
     color: white;
 }
 
+.navbar-light .dropdown-item.active .nav-link,
+.navbar-light .dropdown-item .nav-link:active,
+.navbar-light .dropdown-item .nav-link:focus,
+.navbar-light .dropdown-item:hover .nav-link {
+    color: white;
+}
+
 #navbackground {
   background-color: #c8dda4;
   padding: 0.4em;
@@ -86,15 +93,15 @@ b {
 }
 
 #navbarNavDropdown .dropdown-menu .show a:hover {
-  background-color: #65852e;
+  color: white;
 }
 
 #navbarNavDropdown .dropdown-menu a:hover {
-  background-color: #81a04b;
+  color: white;
 }
 
 #navbarNavDropdown .dropdown-menu ul li:hover {
-  background-color: #65852e;
+  color: white;
 }
 
 #submenu {
