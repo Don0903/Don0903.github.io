@@ -1,0 +1,130 @@
+{
+  "name": "SmartPhones",
+  "children": [
+    {"name": "Screen",
+      "children": [
+        {
+          "name": "LCD",
+          "children": [
+            { "name": "AgglomerativeCluster", "size": 3938 },
+            { "name": "CommunityStructure", "size": 3812 },
+            { "name": "HierarchicalCluster", "size": 6714 },
+            { "name": "MergeEdge", "size": 743 }
+          ]
+        },
+        {
+          "name": "Metal backing",
+          "children": [
+            { "name": "BetweennessCentrality", "size": 3534 },
+            { "name": "LinkDistance", "size": 5731 },
+            { "name": "MaxFlowMinCut", "size": 7840 },
+            { "name": "ShortestPaths", "size": 5914 },
+            { "name": "SpanningTree", "size": 3416 }
+          ]
+        },
+        {
+          "name": "Screen filter",
+          "children": [{ "name": "AspectRatioBanker", "size": 7074 }]
+        },
+        {
+          "name": "Wiring and Lights",
+          "children": [{ "name": "AspectRatioBanker", "size": 7074 }]
+        },
+        {
+          "name": "Front Glass",
+          "children": [{ "name": "AspectRatioBanker", "size": 7074 }]
+        },
+        {
+          "name": "Front Camera",
+          "children": [{ "name": "AspectRatioBanker", "size": 7074 }]
+        },
+        {
+          "name": "Front Mic",
+          "children": [{ "name": "AspectRatioBanker", "size": 7074 }]
+        },
+        {
+          "name": "Home Button",
+          "children": [{ "name": "AspectRatioBanker", "size": 7074 }]
+        }
+      ]
+    },
+    {"name": "Internals",
+      "children": [
+        {
+          "name": "Back Camera",
+          "children": [{ "name": "ArrayInterpolator", "size": 1983 },
+            { "name": "ArrayInterpolator", "size": 1983 },
+            { "name": "ArrayInterpolator", "size": 1983 },
+            { "name": "ArrayInterpolator", "size": 1983 }]
+        },
+        {
+          "name": "Tampic Engine",
+          "children": [{ "name": "ArrayInterpolator", "size": 1983 }]
+        },
+        {
+          "name": "Audio Processing Center",
+          "children": [{ "name": "ArrayInterpolator", "size": 1983 }]
+        },
+        {
+          "name": "Wifi Signalling Antenna ",
+          "children": [{ "name": "ArrayInterpolator", "size": 1983 },
+            { "name": "ArrayInterpolator", "size": 1983 },
+            { "name": "ArrayInterpolator", "size": 1983 },
+            { "name": "ArrayInterpolator", "size": 1983 }]
+        },
+        {
+          "name": "Sim Port",
+          "children": [{ "name": "ArrayInterpolator", "size": 1983 }]
+        },
+        {
+          "name": "Battery",
+          "children": [{ "name": "ArrayInterpolator", "size": 1983 }]
+        },
+        {
+          "name": "Charging Port + Speaker",
+          "children": [{ "name": "ArrayInterpolator", "size": 1983 }]
+        },
+        {
+          "name": "Button Connections and Camera Light",
+          "children": [{ "name": "ArrayInterpolator", "size": 1983 }]
+        },
+        {
+          "name": "Button Mechanism",
+          "children": [{ "name": "ArrayInterpolator", "size": 1983 }]
+        },
+        {
+          "name": "Speaker",
+          "children": [{ "name": "ArrayInterpolator", "size": 1983 }]
+        },
+        {
+          "name": "Screws",
+          "children": [{ "name": "ArrayInterpolator", "size": 1983 }]
+        }
+      ]
+    },
+    {"name": "Structural",
+      "children": [
+        {
+          "name": "converters",
+          "children": [
+            { "name": "Converters", "size": 721 },
+            { "name": "DelimitedTextConverter", "size": 4294 },
+            { "name": "GraphMLConverter", "size": 9800 },
+            { "name": "IDataConverter", "size": 1314 },
+            { "name": "JSONConverter", "size": 2220 }
+          ]
+        },
+        { "name": "Meatl Covers", "size": 1759 },
+        { "name": "Plastic attatchments", "size": 2165 }
+      ]
+    },
+    {"name": "Casing",
+      "children": [
+        { "name": "DirtySprite", "size": 8833 },
+        { "name": "LineSprite", "size": 1732 },
+        { "name": "RectSprite", "size": 3623 },
+        { "name": "TextSprite", "size": 10066 }
+      ]
+    }
+  ]
+}
