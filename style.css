@@ -445,6 +445,15 @@ footer img {
   }
 }
 
+@media (max-width: 466px) {
+ .left_contact{
+   padding-left: 10px!important;
+ }
+ #contactform{
+  width: 280px !important;
+}
+}
+
 
 @media (min-width: 993px) {
   /* image for informaiton sections */
