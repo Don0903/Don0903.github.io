@@ -109,9 +109,9 @@ b {
   transform: translateY(-50%);
 }
 
-@media (min-width: 450px) {
+@media (min-width: 350px) {
   #site_header {
-    display: none;
+    display: none !important;
     width: 100% !important;
   }
 }
