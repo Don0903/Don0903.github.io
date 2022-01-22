@@ -111,7 +111,7 @@ b {
 
 @media (min-width: 350px) {
   #site_header {
-    display: none !important;
+    display: none;
     width: 100% !important;
   }
 }
