@@ -109,7 +109,7 @@ b {
   transform: translateY(-50%);
 }
 
-@media (min-width: 350px) {
+@media (min-width: 200px) {
   #site_header {
     display: none;
     width: 100% !important;
