@@ -121,75 +121,48 @@
     <div class="container-fluid padding">
       <div class="row welcome text-center">
         <div class="col-12">
-          <h1 class="display-4">What happens to my phone?</h1>
+          <h1 class="display-4 revealUp">What happens to my phone?</h1>
         </div>
-        <hr />
+        <hr class="revealUp"/>
         <div class="col-12">
-          <p class="lead">
+          <p class="lead revealUp">
             Used smartphones have potential to be economically profitable and
-            environmentally friendly.
+            environmentally friendly. Here's a snippet on how raw materials can be extracted!
           </p>
         </div>
       </div>
     </div>
 
     <!--- Three Column Section -->
-    <div class="container-fluid padding">
-      <div class="row text-center padding">
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <i class="fas fa-recycle"></i>
-          <h3>Benefits of recycling</h3>
-          <a href="#">
-            <div class="btn btn-one">
-              <span>READ MORE</span>
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <i class="fas fa-mobile"></i>
-          <h3>Benefits of buying 2nd hand</h3>
-          <a href="#">
-            <div class="btn btn-one">
-              <span>READ MORE</span>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-12 col-md-4">
-          <i class="fas fa-map-marker-alt"></i>
-          <h3>Drop-off points</h3>
-          <a href="dropoff.html">
-            <div class="btn btn-one">
-              <span>READ MORE</span>
-            </div>
-          </a>
-        </div>
-      </div>
-      <hr class="my-4" />
-    </div>
-
+    <div class="imgContainer">
+    <img class="revealUp" src="img/figma1.jpg" alt="">
+    <img class="revealUp" src="img/figma2.jpg" alt="">
+    <img class="revealUp" src="img/figm3.jpg" alt="">
+  </div>
+    <hr class="revealUp">
     <!--- Two Column Section -->
     <div class="container-fluid padding">
       <div class="row padding">
         <div class="col-lg-6">
-          <h2 class="text-center">Do it for the kids</h2>
+          <h2 class="text-center revealUp">Steven's section</h2>
           <br />
-          <em
+          <p  class="revealUp"><em
             >"...They worked in mines for up to 12 hours a day, for US$1 or $2,
             in extremely hot temperatures, without the slightest protection and
             in contact with high concentrations of cobalt.."</em
-          >
+          ></p>
           <br />
           <br />
           <br />
           <a
-            class="btn btn-primary text-center container-fluid"
+            class="btn btn-primary text-center container-fluid revealUp"
             href="drcongo.html"
             >Learn More</a
           >
         </div>
         <div class="col-lg-6">
           <img
-            class="img-fluid"
+            class="img-fluid revealUp"
             src="img/child-labour.jpg"
             alt=""
             style="border-radius: 15px"
@@ -252,6 +225,9 @@
           </div>
         </div>
       </div>
+      <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script>
+      <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+      <script src="animations.js"></script>
       <script>
         jQuery(document).ready(function ($) {
           jQuery(window).scroll(function () {
