@@ -5,7 +5,6 @@ gsap.utils.toArray(".revealUp").forEach(function (elem) {
     trigger: elem,
     start: "top 90%",
     end: "bottom 10%",
-    markers: true,
     onEnter: function () {
       gsap.fromTo(
         elem,
