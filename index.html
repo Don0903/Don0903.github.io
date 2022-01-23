@@ -26,7 +26,6 @@
   </head>
   <body>
     <!-- Navigation float -->
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="site_header">
       <div class="container-fluid" id="navbackground">
         <a class="navbar-brand" href="index.html"
@@ -117,7 +116,7 @@
       </div>
     </nav>
 
-
+<!-- vid front page -->
     <div class="overlay">
       <video src="video.mp4" autoplay="true" loop="true" muted></video>
       <div class="centertext">
@@ -155,11 +154,11 @@
     <div class="container-fluid padding">
       <div class="row welcome text-center">
         <div class="col-12">
-          <h1 class="display-4">You can do it.</h1>
+          <h1 class="display-4 revealUp">You can do it.</h1>
         </div>
-        <hr />
+        <hr class="revealUp"/>
         <div class="col-12">
-          <p class="lead">
+          <p class="lead revealUp">
             Used smartphones have potential to be economically profitable and
             environmentally friendly.
           </p>
@@ -168,7 +167,7 @@
     </div>
 
     <!--- Three Column Section -->
-    <div class="container-fluid padding">
+    <div class="container-fluid padding revealUp">
       <div class="row text-center padding">
         <div class="col-xs-12 col-sm-6 col-md-4">
           <i class="fas fa-recycle"></i>
@@ -202,7 +201,7 @@
     </div>
 
     <!--- Two Column Section -->
-    <div class="container-fluid padding">
+    <div class="container-fluid padding revealUp">
       <div class="row padding">
         <div class="col-lg-6">
           <h2 class="text-center">Do it for the kids</h2>
@@ -232,7 +231,7 @@
     <hr class="my-4" />
 
     <!--- two column section -->
-    <div class="container-fluid padding">
+    <div class="container-fluid padding revealUp">
       <div class="row padding">
         <div class="col-lg-6">
           <img
@@ -262,9 +261,9 @@
       </div>
     </div>
 
-    <hr class="my-4" />
+    <hr class="my-4 revealUp" />
     <!--- useful link section -->
-    <a data-toggle="collapse" data-target="#emoji" class="animated-button1">
+    <a data-toggle="collapse" data-target="#emoji" class="animated-button1 revealUp">
       <span></span>
       <span></span>
       <span></span>
@@ -352,7 +351,7 @@
   
 
     <!--- Connect -->
-    <div class="container-fluid padding">
+    <div class="container-fluid padding revealUp">
       <div class="row text-center padding">
         <div class="col-12">
           <h2>Contact Us!</h2>
@@ -400,6 +399,9 @@
           </div>
         </div>
       </div>
+      <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+    <script src="animations.js"></script>
       <script>
         jQuery(document).ready(function ($) {
           jQuery(window).scroll(function () {
