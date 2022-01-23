@@ -121,16 +121,16 @@
     <div class="container-fluid padding">
       <div class="row welcome text-center">
         <div class="col-12">
-          <h1 class="display-4">Meet the team!</h1>
+          <h1 class="display-4 revealUp">Meet the team!</h1>
         </div>
-        <hr />
+        <hr class="revealUp"/>
       </div>
     </div>
     <!--- Cards -->
     <div class="container-fluid padding">
       <div class="row padding">
         <div class="col-md-4">
-          <div class="card">
+          <div class="card revealUp">
             <img class="card-imd-top" src="img/Akiya.jpg" alt="" />
             <div class="card-body">
               <h4 class="card-title">
@@ -143,7 +143,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card">
+          <div class="card revealUp">
             <img class="card-imd-top" src="img/BM.jpg" alt="" />
             <div class="card-body">
               <h4 class="card-title">Branko Lietzmann (Left)</h4>
@@ -154,7 +154,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card">
+          <div class="card revealUp">
             <img class="card-imd-top" src="img/carlotta.jpg" alt="" />
             <div class="card-body">
               <h4 class="card-title">Carlotta Milone</h4>
@@ -164,7 +164,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card">
+          <div class="card revealUp">
             <img class="card-imd-top" src="img/lisandra.jpg" alt="" />
             <div class="card-body">
               <h4 class="card-title">Lisandra Halley</h4>
@@ -181,7 +181,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card">
+          <div class="card revealUp">
             <img class="card-imd-top" src="img/maaike.jpg" alt="" />
             <div class="card-body">
               <h4 class="card-title">Maaike Hersov</h4>
@@ -198,7 +198,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card">
+          <div class="card revealUp">
             <img class="card-imd-top" src="img/Nico.jpg" alt="" />
             <div class="card-body">
               <h4 class="card-title">Nicolas Donetti</h4>
@@ -209,7 +209,7 @@
           </div>
         </div>
         <div class="col-sm-12 col-md-4">
-          <div class="card">
+          <div class="card revealUp">
             <img class="card-imd-top" src="img/recyclephones.png" alt="" />
             <div class="card-body">
               <h4 class="card-title">Steven van Trooijen</h4>
@@ -257,6 +257,9 @@
           </div>
         </div>
       </div>
+      <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script>
+      <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+      <script src="animations.js"></script>
       <script>
         jQuery(document).ready(function ($) {
           jQuery(window).scroll(function () {
