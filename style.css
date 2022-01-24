@@ -816,3 +816,8 @@ h1 {
   max-width: 700px;
   height: auto;
 }
+
+.card-imd-top{
+  width: 100%;
+  height: auto;
+}
