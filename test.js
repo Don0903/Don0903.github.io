@@ -90,7 +90,7 @@ const text = newSlice.append('text')
 text.append('textPath')
     .attr('startOffset','50%')
     .attr('xlink:href', (_, i) => `#hiddenArc${i}` )
-    .text(d => d.data.name )// + ': \n' + formatNumber(d.value) + 'g')
+    .text(d => d.data.name  + ': \n' + formatNumber(d.value) + 'g')
     .style('fill', 'none')
     .style('stroke', '#fff')
     .style('stroke-width', 5)
@@ -99,7 +99,7 @@ text.append('textPath')
 text.append('textPath')
     .attr('startOffset','50%')
     .attr('xlink:href', (_, i) => `#hiddenArc${i}` )
-    .text(d => d.data.name)//  + ': \n ' + formatNumber(d.value) + 'g');
+    .text(d => d.data.name  + ': \n ' + formatNumber(d.value) + 'g');
 });
 
 function focusOn(d = { x0: 0, x1: 1, y0: 0, y1: 1 }) {
