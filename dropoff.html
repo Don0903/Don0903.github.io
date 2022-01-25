@@ -8,22 +8,12 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <link rel="stylesheet" href="style.css" />
-    <title>Drop-off</title>
+    <title>Contact</title>
   </head>
   <body>
     <!-- Navigation float -->
@@ -116,38 +106,27 @@
         </div>
       </div>
     </nav>
-    <!-- dropoff section -->
+    <!-- heading  -->
     <div class="container-fluid padding">
-      <div class="row padding">
-        <div class="col-lg-6">
-          <h2>Local dropoff point</h2>
-          <p>
-            Every 60 seconds, a minute passes in DR Congo. So sad and
-            devastating :(
-          </p>
-          <p>
-            日本語もできるのですか？ヤバ、できるみたいですね！日本人のお方がここにいらっしゃる場合のためにここに記入しときますが。。。
-            このサイトはめちゃくちゃ面白いけど面倒なプロジェクトの為に作ったやつです。無視していいですよー
-          </p>
-          <br />
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <h1 class="display-4">Local Drop-off point</h1>
+          <p>Find out where the closes points where you can recycle your old phones, or buy a second hand!</p>
         </div>
-        <div class="col-lg-6">
-          <img
-            class="img-fluid"
-            src="img/maas.jpg"
-            style="border-radius: 15px"
-          />
-        </div>
+        <hr />
       </div>
     </div>
-    <hr class="my-4" />
+
+    <div class="containmap">
+      <div id="map"></div>
+     </div>
 
     <!--- Footer -->
     <footer>
       <div class="container-fluid padding">
         <div class="row text-center">
           <div class="col-md-4">
-            <img src="img/logo.png" alt="" />
+            <img src="img/logo.jpg" alt="" />
             <hr class="light" />
             <p>+31644571618</p>
             <p>hoken0903@gmail.com</p>
@@ -156,26 +135,28 @@
           </div>
           <div class="col-md-4">
             <hr class="light" />
-            <h5>something here</h5>
+            <h5>Contact hours</h5>
             <hr class="light" />
-            <p>something here</p>
-            <p>something here</p>
-            <p>something here</p>
+            <p>Mondays - Fridays: 8:00 - 18:00</p>
+            <p>Satudays: 12:00 - 18:00</p>
+            <p>Sundays/Holidays: CLOSED</p>
           </div>
           <div class="col-md-4">
             <hr class="light" />
-            <h5>something here</h5>
+            <h5>Reach Us!</h5>
             <hr class="light" />
-            <p>something here</p>
-            <p>something here</p>
-            <p>something here</p>
+            <p><a href="about.html" style="text-decoration: none;">About Us</a></p>
+            <p><a href="contact.html" style="text-decoration: none;">Contacts</a></p>
+            <p><a href="dropoff.html" style="text-decoration: none;">Our Building</a></p>
+
           </div>
           <div class="col-12">
             <hr class="light-100" />
-            <h5>&copy; somewebsite</h5>
+            <h5>&copy; SmartApart</h5>
           </div>
         </div>
       </div>
+
       <script>
         jQuery(document).ready(function ($) {
           jQuery(window).scroll(function () {
@@ -210,6 +191,62 @@
           return false;
         });
       </script>
+<script>
+let map, infoWindow;
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: -34.397, lng: 150.644 },
+    zoom: 11,
+  });
+  infoWindow = new google.maps.InfoWindow();
+
+  const locationButton = document.createElement("button");
+
+  locationButton.textContent = "Pan to Current Location";
+  locationButton.classList.add("custom-map-control-button");
+  map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
+  locationButton.addEventListener("click", () => {
+    // Try HTML5 geolocation.
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const pos = {
+            lat: position.coords.latitude,
+            lng: position.coords.longitude,
+          };
+
+          infoWindow.setPosition(pos);
+          infoWindow.setContent("Location found.");
+          infoWindow.open(map);
+          map.setCenter(pos);
+        },
+        () => {
+          handleLocationError(true, infoWindow, map.getCenter());
+        }
+      );
+    } else {
+      // Browser doesn't support Geolocation
+      handleLocationError(false, infoWindow, map.getCenter());
+    }
+  });
+}
+
+function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+  infoWindow.setPosition(pos);
+  infoWindow.setContent(
+    browserHasGeolocation
+      ? "Error: The Geolocation service failed."
+      : "Error: Your browser doesn't support geolocation."
+  );
+  infoWindow.open(map);
+}
+
+  </script>
+  <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzJm7fzrWZjzUXfC70nSvNSyjhGEmOxkc&callback=initMap&libraries=&v=weekly"
+  async
+></script>
     </footer>
   </body>
 </html>
