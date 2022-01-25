@@ -848,3 +848,10 @@ h1 {
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
+
+/* reference list */
+.reflist{
+  margin: 0 23%;
+  text-indent: 50px;
+  text-align: justify;
+}
