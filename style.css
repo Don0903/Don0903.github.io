@@ -329,8 +329,9 @@ footer {
 hr.light {
   border-top: 1px solid #d5d5d5;
   width: 75%;
-  margin-top: 0.8rem;
-  margin-bottom: 1rem;
+  margin-top: 0.8rem!important;
+  margin-bottom: 1rem!important;
+  margin: auto;
 }
 
 footer a {
@@ -614,7 +615,7 @@ tr td {
   padding-top: 20px;
 }
 
-/* some dumb shit */
+/* some dumb animation button shit */
 .animated-button1 {
   background: linear-gradient(-30deg, white 50%, white 50%);
   display: inline-block;
@@ -806,7 +807,7 @@ h1 {
   background-color: #000;
 }
 
-
+/* for the method section */
 .imgContainer img{
   display: flex;
   justify-content: center;
@@ -816,8 +817,34 @@ h1 {
   max-width: 700px;
   height: auto;
 }
-
+/* fix for the img size problem on iphones */
 .card-imd-top{
   width: 100%;
   height: auto;
+}
+
+/* maps on dropoff page */
+#map{
+  width: 80%;
+  height: 300px;
+  margin: auto;
+}
+.containmap{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.custom-map-control-button{
+  color: green;
+  padding: 1px;
+  font-size: 1.5em;
+}
+
+/* super unnecessary way of flipping img by 90 but yolo */
+.rotate90 {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
